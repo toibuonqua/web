@@ -1,0 +1,80 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin:0px;
+    background-image: url("https://wallpapersite.com/images/wallpapers/airplane-4200x2608-aircraft-air-travel-4k-1028.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}    
+.textstyle{
+    font-family: 'Pattaya';
+    color: rgb(49, 96, 199);
+    text-align: center;
+}
+.flex-container {
+    width: 100%;
+    display: flex;
+  }
+  
+  .flex-container > div {
+    width: auto;
+    margin: 60px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+  }
+.shadow{
+    text-shadow: 3px 3px 0 white;
+}
+.button {
+    margin-left: 35%;
+    margin-top: 35px; 
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px 2px black;
+    background-color: rgb(49, 96, 199);
+    font-family: 'Pattaya';
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .mediascr{
+    max-width: 800px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width: 767px) {
+    .mediascr {
+      height: auto;
+    }
+  }
